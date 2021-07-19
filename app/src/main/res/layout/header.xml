@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentTop="true"
+    android:background="@color/bg_color"
+    android:orientation="vertical"
+    android:weightSum="2" >
+
+     <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_alignParentTop="true"
+        android:layout_weight="1"
+        android:background="@color/bg_color"
+        android:orientation="horizontal"
+        android:weightSum="6"
+        android:visibility="gone">
+        <ImageButton
+            android:id="@+id/btn_home"
+            android:layout_width="0dip"
+            android:layout_height="70dp"
+            android:layout_weight="5"
+            android:visibility="gone"
+           />
+
+        <ImageView
+            android:layout_width="0dip"
+            android:layout_height="70dp"
+            android:layout_weight="5"
+            android:background="@color/choco"
+             />
+
+        <TextView
+            android:id="@+id/myImageViewText"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="4"
+            android:layout_marginLeft="20dip"
+            android:gravity="center"
+            android:text="@string/bank_name"
+            android:textColor="#FFFFFF"
+            android:textSize="20dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_alignParentTop="true"
+        android:layout_weight="2"
+        android:background="#ffffff"
+        android:orientation="horizontal"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+		android:weightSum="6">
+
+        <ImageView
+            android:id="@+id/img_heading"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_gravity="right"
+            android:layout_weight="0"
+         	android:background="@color/pink"
+            android:paddingBottom="25dip"
+            android:paddingLeft="25dip"
+            android:paddingRight="25dip"
+            android:paddingTop="25dip" />
+
+        <TextView
+            android:id="@+id/txt_heading"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_gravity="left"
+            android:layout_weight="6"
+            android:paddingLeft="10dip"
+            android:background="@color/sub_head_color"
+            android:gravity="center_vertical"
+            android:text="Welcome!"
+            android:textColor="@color/white"
+            android:textSize="16dip"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/btn_back"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:visibility="gone"
+            android:background="@color/choco"/>
+           <!-- android:src="@drawable/cat_logout" />-->
+
+    </LinearLayout>
+
+</LinearLayout>

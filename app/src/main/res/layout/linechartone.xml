@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/root_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#FFFFFFFF"
+        android:orientation="vertical"
+        android:weightSum="20"
+        tools:context=".LinechartOne">
+
+        <include
+            android:id="@+id/inc_hd"
+            layout="@layout/header"/>
+
+
+
+
+
+
+
+        <LinearLayout
+            android:id="@+id/panellinechart"
+            android:layout_width="fill_parent"
+            android:layout_height="0dip"
+            android:layout_weight="20"
+            android:background="#FFFFFFFF"
+            android:orientation="vertical" android:weightSum="10" android:layout_marginBottom="20dip"
+            android:layout_marginLeft="10dip" android:layout_marginRight="10dip">
+
+           <!-- <Button
+                android:id="@+id/btnlinechart"
+                android:layout_width="fill_parent"
+                android:layout_height="0dip"
+                android:layout_weight="2"
+                android:background="#8944ff"
+                android:text="Deposit"
+                android:textColor="#FFFFFFFF"
+                />-->
+
+            <com.github.mikephil.charting.charts.LineChart
+                android:id="@+id/linechart"
+                android:layout_width="match_parent"
+                android:layout_height="0dip"
+                android:layout_weight="10"
+                android:layout_marginLeft="10dip" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+

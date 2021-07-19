@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/root_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#FFFFFFFF"
+        android:orientation="vertical"
+        android:weightSum="20"
+        tools:context=".PichartDemo">
+
+        <include
+            android:id="@+id/inc_hd"
+            layout="@layout/header"/>
+
+    <LinearLayout
+        android:id="@+id/panelpichart"
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="20"
+        android:background="#FFFFFFFF"
+        android:orientation="vertical" android:weightSum="10" android:layout_marginBottom="20dip"
+        android:layout_marginLeft="10dip" android:layout_marginRight="10dip">
+
+        <com.github.mikephil.charting.charts.PieChart
+            android:id="@+id/pichart"
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="10"
+            android:layout_marginLeft="10dip" />
+
+    </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+

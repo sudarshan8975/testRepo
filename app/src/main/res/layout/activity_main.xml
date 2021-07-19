@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:isScrollContainer="true">
+
+    <LinearLayout android:id="@+id/root_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFFFF"
+    android:orientation="vertical"
+    android:weightSum="82"
+    tools:context=".MainActivity">
+
+    <include
+        android:id="@+id/inc_hd"
+        layout="@layout/header"/>
+
+    <LinearLayout
+        android:id="@+id/panelpichart"
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="18"
+        android:background="#FFFFFFFF"
+        android:orientation="vertical" android:weightSum="10" android:layout_marginBottom="20dip"
+        android:layout_marginLeft="50dip" android:layout_marginRight="50dip">
+
+        <Button
+            android:id="@+id/btnpichart"
+            android:layout_width="fill_parent"
+            android:layout_height="0dip"
+            android:layout_weight="2"
+            android:background="#8944ff"
+            android:text="Loans"
+            android:textColor="#FFFFFFFF" />
+
+            <com.github.mikephil.charting.charts.PieChart
+                android:id="@+id/pichart"
+                android:layout_width="match_parent"
+                android:layout_height="0dip"
+                android:layout_weight="8"
+                android:layout_marginLeft="10dip" />
+
+    </LinearLayout>
+
+<!--    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:background="#FFFFFF"
+        android:layout_weight="2"/>-->
+
+
+
+
+
+    <!--<View
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:background="#FFFFFF"
+        android:layout_weight="1"/>-->
+
+
+
+    <LinearLayout
+        android:id="@+id/panellinechart"
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="18"
+        android:background="#FFFFFFFF"
+        android:orientation="vertical" android:weightSum="10" android:layout_marginBottom="20dip"
+        android:layout_marginLeft="50dip" android:layout_marginRight="50dip">
+
+        <Button
+            android:id="@+id/btnlinechart"
+            android:layout_width="fill_parent"
+            android:layout_height="0dip"
+            android:layout_weight="2"
+            android:background="#8944ff"
+            android:text="Deposit"
+            android:textColor="#FFFFFFFF"
+            />
+
+            <com.github.mikephil.charting.charts.LineChart
+                android:id="@+id/linechart"
+                android:layout_width="match_parent"
+                android:layout_height="0dip"
+                android:layout_weight="8"
+                android:layout_marginLeft="10dip" />
+
+    </LinearLayout>
+
+    <!--<View
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:background="#FFFFFF"
+        android:layout_weight="1"/>-->
+
+
+    <LinearLayout
+        android:id="@+id/panellinechart1"
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="18"
+        android:weightSum="10"
+        android:background="#FFFFFFFF"
+        android:orientation="vertical" android:layout_marginBottom="20dip"
+        android:layout_marginLeft="50dip" android:layout_marginRight="50dip">
+
+        <Button
+            android:id="@+id/btnlinechart1"
+            android:layout_width="fill_parent"
+            android:layout_height="0dip"
+            android:layout_weight="2"
+            android:background="#8944ff"
+            android:text="Advances"
+            android:textColor="#FFFFFFFF" />
+
+            <com.github.mikephil.charting.charts.LineChart
+                android:id="@+id/linechart1"
+                android:layout_width="match_parent"
+                android:layout_height="0dip"
+                android:layout_weight="8"
+                android:layout_marginLeft="10dip" />
+
+    </LinearLayout>
+    <!--<View
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:background="#FFFFFF"
+        android:layout_weight="1"/>-->
+
+
+
+    <LinearLayout
+        android:id="@+id/panelspeedview"
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="28"
+        android:background="#FFFFFFFF"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:layout_gravity="center"
+        android:weightSum="10" android:layout_marginBottom="20dip"
+        android:layout_marginLeft="50dip" android:layout_marginRight="50dip"
+       >
+        <Button
+            android:id="@+id/btnspeedview"
+            android:layout_width="fill_parent"
+            android:layout_height="0dip"
+            android:layout_weight="2"
+            android:background="#8944ff"
+            android:text="Speed"
+            android:textColor="#FFFFFFFF" />
+
+        <!--<LinearLayout
+            android:id="@+id/pnelspeedview"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+
+            android:background="#FFFFFFFF"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:layout_gravity="center"
+            >-->
+           <com.github.anastr.speedviewlib.SpeedView
+            android:id="@+id/speedView"
+               android:layout_width="wrap_content"
+               android:layout_height="0dip"
+               android:layout_weight="8"
+                android:layout_gravity="center"
+               android:gravity="center"
+               />
+        <!--</LinearLayout>-->
+        <LinearLayout
+            android:id="@+id/panelbarchart"
+            android:layout_width="fill_parent"
+            android:layout_height="0dip"
+            android:layout_weight="0"
+            android:background="#FFFFFFFF"
+            android:orientation="vertical"
+            android:visibility="gone" android:weightSum="10" android:layout_marginBottom="20dip"
+            android:layout_marginLeft="50dip" android:layout_marginRight="50dip">
+
+            <Button
+                android:id="@+id/btnbarchart"
+                android:layout_width="fill_parent"
+                android:layout_height="0dip"
+                android:layout_weight="2"
+                android:background="#8944ff"
+                android:text="Barchart"
+                android:textColor="#FFFFFFFF"
+                android:visibility="gone"/>
+
+            <com.github.mikephil.charting.charts.BarChart
+                android:id="@+id/barchart"
+                android:layout_width="wrap_content"
+                android:layout_height="0dip"
+                android:layout_weight="8"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
+
+</ScrollView>
+
+

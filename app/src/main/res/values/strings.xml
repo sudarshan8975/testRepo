@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Business Intelligence</string>
+    <string name="bank_name">Ideal Bank</string>
+    <string name="loanlbl">Loans</string>
+    <string name="lblBranch">Branch</string>
+    <string name="pie_chart"></string>
+    <string name="soap_action">BIFrontLineWebServices</string>
+    <string name="url">http://listspl.ddns.net:8087/axis2/services/BIFrontLineWebServices</string>
+    <!--<string name="url">http://172.100.30.96:8087/axis2/services/BiWebService</string>-->
+    <string name="namespace">http://frontline.list</string>
+    <string name="advYes">Yesterday Advance</string>
+    <string name="lnYes">Yesterday Loan</string>
+    <string name="lnBefYes">Day Before Yesterday Loan</string>
+    <string name="advBefYes">Day Before Yesterday Advance</string>
+    <string name="depBefYes">Day Before Yesterday Deposit</string>
+    <string name="depYes">Yesterday Deposit</string>
+    <string name="title_activity_dashboard">Dashboard</string>0
+    <string name="lbl_userid">Enter User Id</string>
+    <string name="lbl_pass">Enter Passward</string>
+    <string name="alertInvalid">Invalid Credentials</string>
+    <string name="alertProblem">Problem To Login</string>
+    <string name="login_email_hint">Email</string>
+    <string name="login_password_hint">Password</string>
+    <string name="signup_login_hint">Already have an account? Sign In</string>
+    <string name="login_signup_hint">Don\'t have an account? Sign Up</string>
+    <string name="alrt_exit">Do You Wan\'t To Exit?</string>
+</resources>
